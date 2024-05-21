@@ -10,7 +10,7 @@ interface Props {
 const ProjectCard = ({ src, title, description }: Props) => {
   return (
     <div className="relative rounded-lg shadow-lg border border-[#2A0E61]">
-      <div className="overflow-y-auto h-[285px]">
+      <div className="overflow-y-auto h-[37vh]">
       <Image
         src={src}
         alt={title}

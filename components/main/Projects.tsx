@@ -14,7 +14,8 @@ const Projects = () => {
         <ProjectCard
           src="/GF.png"
           title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="One stop solution for the residents, employees and managing comittee of our financial city GIFT. This was our Hackathon Project for SSIP
+          "
         />
         <ProjectCard
           src="/TT.png"
