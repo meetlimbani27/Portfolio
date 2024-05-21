@@ -1,4 +1,3 @@
-
 .container {
     font-size: 6px;
     width: 40em;
@@ -17,6 +16,8 @@
     height: 22em;
     border-radius: 50%;
     animation: orbit 100s linear infinite;
+    background-image: url('../../../public/solar/sunpng2.png');
+    background-size: cover;
 }
 .mercury,
 .venus,
@@ -41,7 +42,6 @@
     height: 15em;
     animation: orbit 137.4s linear infinite;
 }
-
 .venus {
     top: 10em;
     left: 10em;
@@ -49,7 +49,6 @@
     height: 20em;
     animation: orbit 97.4s linear infinite;
 }
-
 .earth {
     top: 6em;
     left: 6em;
@@ -60,8 +59,8 @@
 .moon {
     top: 2em;
     right: -1em;
-    width: 7em;
-    height: 7em; 
+    width: 7.3em;
+    height: 7.3em; 
     animation: orbit 5.4s linear infinite;
 }
 .mars {
@@ -107,108 +106,159 @@
     animation: orbit 36s linear infinite;
 }
 
-.mercury::before,
-.venus::before,
-.earth::before,
-.moon::before,
-.mars::before,
-.jupiter::before,
-.saturn::before,
-.uranus::before,
-.neptune::before,
-.pluto::before{
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    animation: orbit 60s linear infinite;
+.sun,
+.mercury img,
+.venus img,
+.earth img,
+.moon img,
+.mars img,
+.jupiter img,
+.saturn img,
+.uranus img,
+.neptune img,
+.pluto img {
+    transition: transform 0.5s ease-in-out;
 }
-.sun {
-    background-image: url('../../../public/solar/sunpng2.png');
-    background-size: cover;
 
+.mercury img:hover,
+.venus img:hover,
+.earth img:hover,
+.moon img:hover,
+.mars img:hover,
+.jupiter img:hover,
+.saturn img:hover,
+.uranus img:hover,
+.neptune img:hover,
+.pluto img:hover {
+    transform: scale(1.2);
 }
-.mercury::before {
+
+.mercury img {
+    width: 2em;
+    height: 2em;
+    position: absolute;
     top: 1.5em;
     right: 0.8em;
+    content: url('../../../public/solar/gitp.png');
+}
+.venus img {
     width: 2em;
     height: 2em;
-    background-image: url('../../../public/solar/gitp.png');
-    background-size: cover;
-}
-.venus::before {
+    position: absolute;
     top: 2em;
     right: 2em;
-    width: 2em;
-    height: 2em;
-    background-image: url('../../../public/solar/fmp.png');
-    background-size: cover;
+    content: url('../../../public/solar/fmp.png');
 }
-.earth::before {
+.earth img {
+    width: 5em;
+    height: 5em;
+    position: absolute;
     top: 3em;
     right: 0em;
-    width: 5em;
-    height: 5em;
-    background-image: url('../../../public/solar/reactp.png');
-    background-size: cover;
+    content: url('../../../public/solar/reactp.png');
 }
-
-.moon::before {
-    top: 0.8em;
-    right: 0.2em;
+.moon img {
     width: 1.2em;
     height: 1.2em;
-    background-image: url('../../../public/solar/moon.png');
-    background-size: cover;
+    position: absolute;
+    top: 0.8em;
+    right: 0.2em;
+    content: url('../../../public/solar/moon.png');
 }
-.mars::before {
-    top: 5em;
-    right: 3em;
+.mars img {
     width: 3em;
     height: 3em;
-    background-image: url('../../../public/solar/tailwindp.png');
-    background-size: cover;
-}
-.jupiter::before {
-    top: 6em;
+    position: absolute;
+    top: 5em;
     right: 3em;
+    content: url('../../../public/solar/tailwindp.png');
+}
+.jupiter img {
     width: 5em;
     height: 5em;
-    background-image: url('../../../public/solar/fbp.png');
-    background-size: cover;
+    position: absolute;
+    top: 6em;
+    right: 3em;
+    content: url('../../../public/solar/fbp.png');
 }
-.saturn::before {
-    top: 7.5em;
-    right: 5em;
+.saturn img {
     width: 4.5em;
     height: 4.5em;
-    background-image: url('../../../public/solar/tsp.png');
-    background-size: cover;
+    position: absolute;
+    top: 7.5em;
+    right: 5em;
+    content: url('../../../public/solar/tsp.png');
 }
-.uranus::before {
+.uranus img {
+    width: 4em;
+    height: 4em;
+    position: absolute;
     top: 9em;
     right: 6.5em;
+    content: url('../../../public/solar/vitep.png');
+}
+.neptune img {
     width: 4em;
     height: 4em;
-    background-image: url('../../../public/solar/vitep.png');
-    background-size: cover;
-}
-.neptune::before {
+    position: absolute;
     top: 10em;
     right: 8em;
+    content: url('../../../public/solar/figmap.png');
+}
+.pluto img {
     width: 4em;
     height: 4em;
-    background-image: url('../../../public/solar/figmap.png');
-    background-size: cover;
-}
-.pluto::before {
+    position: absolute;
     top: 11em;
     right: 10em;
-    width: 4em;
-    height: 4em;
-    background-image: url('../../../public/solar/nextp.png');
-    background-size: cover;
+    content: url('../../../public/solar/nextp.png');
 }
 
+
+.container:hover {
+      
+.mercury img {
+    content: url('../../../public/solar/mercury.png'); 
+    transform: scale(1.3);
+}
+.venus img {
+    content: url('../../../public/solar/venus.png'); 
+    transform: scale(1.3);
+}
+.earth img {
+    content: url('../../../public/solar/earth.png'); 
+    transform: scale(1.3);
+}
+.moon img {
+    content: url('../../../public/solar/cat.png'); 
+    transform: scale(1.3);
+}
+.mars img {
+    content: url('../../../public/solar/mars.png'); 
+    transform: scale(1.3);
+}
+.jupiter img {
+    content: url('../../../public/solar/jupiter.png'); 
+    transform: scale(1.3);
+}
+.saturn img {
+    content: url('../../../public/solar/saturn.png'); 
+    transform: scale(1.3);
+}
+.uranus img {
+    content: url('../../../public/solar/uranus.png'); 
+    transform: scale(1.3);
+    
+}
+.neptune img {
+    content: url('../../../public/solar/neptune.png'); 
+    transform: scale(1.3);
+}
+.pluto img {
+    content: url('../../../public/solar/pluto.png'); 
+    transform: scale(1.3);
+}
+}
 
 @keyframes orbit {
     to {
@@ -216,3 +266,5 @@
     }
 }
 
+  
+  

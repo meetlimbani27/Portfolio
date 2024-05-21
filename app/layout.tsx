@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/main/Navbar";
 import StarCanvas from "@/components/main/StarBackground";
+import { Toaster } from "react-hot-toast";
+import Footer from "@/components/main/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,11 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={` ${inter.className} bg-[#030014]` }>
+    <html lang="en" className="scroll-smooth">
+      <body className={` ${inter.className} bg-[#030014] overflow-x-hidden ` }>
         <Navbar />
         {children}
+        <Toaster position="top-right" />
         <StarCanvas />
+        <Footer />
         </body>
     </html>
   );

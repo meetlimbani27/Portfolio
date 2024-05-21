@@ -1,3 +1,5 @@
+import Contact from "@/components/main/Contact";
+import Experience from "@/components/main/Experience";
 import Hero from "@/components/main/Hero";
 import Navbar from "@/components/main/Navbar";
 import Skills from "@/components/main/solar_skills/Skills";
@@ -8,6 +10,8 @@ export default function Home() {
     <main className="flex flex-col relative h-full w-full">
       <Hero />
       <Skills />
+      <Experience />
+      <Contact />
     </main>
   );
 }
