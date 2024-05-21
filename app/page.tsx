@@ -3,6 +3,7 @@ import Experience from "@/components/main/Experience";
 import Hero from "@/components/main/Hero";
 import Navbar from "@/components/main/Navbar";
 import Projects from "@/components/main/Projects";
+import ToTopBtn from "@/components/main/ToTopBtn";
 import Skills from "@/components/main/solar_skills/Skills";
 import Image from "next/image";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Experience />
       <Projects />
       <Contact />
+      <ToTopBtn />
     </main>
   );
 }
