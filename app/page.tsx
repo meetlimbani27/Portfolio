@@ -2,6 +2,7 @@ import Contact from "@/components/main/Contact";
 import Experience from "@/components/main/Experience";
 import Hero from "@/components/main/Hero";
 import Navbar from "@/components/main/Navbar";
+import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/solar_skills/Skills";
 import Image from "next/image";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Experience />
+      <Projects />
       <Contact />
     </main>
   );

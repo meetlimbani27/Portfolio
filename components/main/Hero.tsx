@@ -10,7 +10,7 @@ const Hero = (props: Props) => {
       autoPlay
       muted
       loop
-      className='rotate-180 animate-widthExpand w-full h-[80vh] object-cover -z-10'
+      className='rotate-180 animate-widthExpand w-full h-[80vh] object-cover -z-20'
       >
         <source src='/blackhole.webm' type='video/webm' />
       </video>
