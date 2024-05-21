@@ -1,14 +1,22 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+ interface SVGComponentProps  {
+  width?: number;
+  height?: number;
+  viewBox?: string;
+  fill?: string;
+  xmlns?: string;
+};
 
-const RocketSvg = (props: React.SVGProps<SVGSVGElement>) => (
+
+const RocketSvg = () => (
   <svg
     // width={1898}
     // height={2372}
     viewBox="0 0 1898 2372"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
+    
   >
     <motion.g
       id="rocket"

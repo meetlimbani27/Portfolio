@@ -48,7 +48,7 @@ const ToTopBtn = (props: Props) => {
         onClick={handleClick}
         className='sm:h-16 sm:w-16 h-[30px] w-[30px] rounded-full transition-all duration-500 ease-in-out'
       >
-        <RocketSvg className="rocket" />
+        <RocketSvg />
       </button>
     </div>
   );
