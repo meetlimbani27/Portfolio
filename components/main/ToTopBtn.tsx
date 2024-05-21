@@ -24,7 +24,7 @@ const ToTopBtn = (props: Props) => {
 
   useEffect(() => {
     if (isFlying) {
-      const rocketElement = document.querySelector('.rocket');
+      const rocketElement = document.querySelector('.rocket') as HTMLElement;
       if (rocketElement) {
         rocketElement.style.transform = 'translateY(-92vh)';
         rocketElement.style.transition = 'transform 1.8s ease-in-out';
