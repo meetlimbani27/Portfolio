@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -17,11 +18,13 @@ const Projects = () => {
           description="One stop solution for the residents, employees and managing comittee of our financial city GIFT. This was our Hackathon Project for SSIP
           "
         />
-        <ProjectCard
-          src="/TT.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+        <Link target="_blank" href="https://customize-your-t.vercel.app/">
+          <ProjectCard
+            src="/TT.png"
+            title="Interactive Website Cards"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          />
+        </Link>
         <ProjectCard
           src="/SP.png"
           title="Space Themed Website"
