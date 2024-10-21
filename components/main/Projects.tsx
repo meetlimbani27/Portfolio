@@ -14,15 +14,15 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
           src="/GF.png"
-          title="Modern Next.js Portfolio"
+          title="GIFT City's One Stop Portal"
           description="One stop solution for the residents, employees and managing comittee of our financial city GIFT. This was our Hackathon Project for SSIP
           "
         />
         <Link target="_blank" href="https://customize-your-t.vercel.app/">
           <ProjectCard
             src="/TT.png"
-            title="Interactive Website Cards"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            title="Customize Your 'T'"
+            description="Upload Your Designs and Logo files to "
           />
         </Link>
         <ProjectCard
