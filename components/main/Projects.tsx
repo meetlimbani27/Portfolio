@@ -14,21 +14,21 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
           src="/GF.png"
-          title="Modern Next.js Portfolio"
+          title="GIFT City's One Stop Portal"
           description="One stop solution for the residents, employees and managing comittee of our financial city GIFT. This was our Hackathon Project for SSIP
           "
         />
         <Link target="_blank" href="https://customize-your-t.vercel.app/">
           <ProjectCard
             src="/TT.png"
-            title="Interactive Website Cards"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            title="Customize Your 'T'"
+            description="Upload Your Designs and Logo files here and customize your personal T. You can also change the color of your T here. Show your Creativity by generating and applying your AI image directly to the T."
           />
         </Link>
         <ProjectCard
           src="/SP.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title="Space Themed Portfolio"
+          description="This is the First Portfolio I created long back. Though imperfect and demanding many improvements i like the space theme so decided to continue using this and focus on building project. Will slowly improve it slowly."
         />
       </div>
     </div>
