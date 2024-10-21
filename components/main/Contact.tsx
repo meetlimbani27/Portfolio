@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
   }, []);
 
   return (
-    <motion.section
+    <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
         />
         <FormButton />
       </form>
-    </motion.section>
+    </motion.div>
   );
 };
 

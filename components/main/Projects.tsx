@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
   );
 
   return (
-    <section
+    <div
       className="flex z-30 flex-col items-center justify-center py-20"
       id="projects"
     >
@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
           description="This is the First Portfolio I created long back. Though imperfect and demanding many improvements i like the space theme so decided to continue using this and focus on building project. Will slowly improve it slowly."
         /> */}
       </div>
-    </section>
+    </div>
   );
 };
 
